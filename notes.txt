@@ -1,0 +1,21 @@
+yarn global add live-server
+
+to run it
+
+live-server public
+
+
+to install babel cli
+
+yarn global add babel-cli@6.24.1
+
+to run babel
+
+babel --help
+
+to start up a init
+
+yarn init
+
+
+yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
