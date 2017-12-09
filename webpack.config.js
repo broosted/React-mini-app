@@ -11,7 +11,7 @@ module.exports = (env) => {
         entry: './src/app.jsx',
         output: {
             //__dirname default project directory path.join from node path library
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         module: {
@@ -46,7 +46,8 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true
+            historyApiFallback: true,
+            publicPath: '/dist/'
         }
     }
 }
